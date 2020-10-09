@@ -2,10 +2,12 @@
 Subject: Decorators
 Date: 2020-10-08
 """
-import time
 
 
 def decorator_function(some_function):
+    """Function for returning wrapper function."""
+    # Make built in libraries to import here.
+    import time
 
     def wrapper_function(*args, **kwargs):
         """Anything in this code witl be runned together with some_function.
